@@ -1,0 +1,20 @@
+[33m                  'ldl.                  [0m
+[33m                 co'.'oc                 [0m
+[33m                 d;   :d                 [0m
+[33m                .dllclc..                [0m
+[33m               .d' ';  ,d.               [0m
+[33m              .d, , ld; ;d.              [0m
+[33m             .d; od, :dl ;d.             [0m
+[33m            .d; od;   ;do :o.            [0m
+[33m           .d: :d'     ,d: co            [0m
+[33m.........  oc  d.       .d  co  .........[0m
+[33m ,oo. ..; oo;;'.         .';;ol ;.. 'oo' [0m
+[33m   'o:.  ldd,               ;ddl  .:o'   [0m
+[33m     'c ld..:o'           'o:..dc c.     [0m
+[33m       cdl.   ;o,       ,o;   .ldc       [0m
+[33m      cc .cl.   ;o,   ;o,   .lc. l:      [0m
+[33m     :c    .cl.   ,oco,   'oc.    c:     [0m
+[33m    ::       .:o'   .   'o:.       c;    [0m
+[33m   ;c          .:o'   ,o:           c,   [0m
+[33m  ,:              ;o:o;              c'  [0m
+[33m  '                .o.                '  [0m
