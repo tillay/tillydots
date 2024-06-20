@@ -1,1 +1,122 @@
-eee
+{
+    "position": "top",
+    "height": 10,
+    "modules-left": ["custom/fileman", "custom/math", "custom/edex", "custom/controls", "custom/apps", "hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "custom/spacer", "network", "custom/vpn", "bluetooth", "cpu", "memory", "backlight","battery","clock","custom/logout"],
+    "custom/spacer": {
+        "format": " "
+    },
+    "custom/controls": {
+        "format": "",
+        "on-click": "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center --verbose",
+        "tooltip": false,
+        "icon-size": 64
+    },
+
+    "custom/apps": {
+        "format": "",
+        "on-click": "xfce4-appfinder",
+        "tooltip": false,
+        "icon-size": 24
+    },
+    "custom/edex": {
+        "format": "",
+        "on-click": "./Apps/edex.AppImage",
+        "tooltip": false,
+        "icon-size": 16
+    },
+    "custom/fileman": {
+        "format": "",
+        "on-click": "thunar",
+        "tooltip": false,
+        "icon-size": 16
+    },
+    "custom/vpn": {
+        "format": "{icon}",
+        "tooltip-format": "{icon}",
+        "exec": "$HOME/.config/waybar/vpn.sh",
+        "return-type": "json",
+        "interval": 5,
+        "format-icons": [" VPN: ", " VPN: "]
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false,
+        "on-click": "gnome-system-monitor"
+    },
+    "custom/logout": {
+        "format": "",
+        "on-click": " bash /home/$USER/exit.sh",
+        "tooltip": false,
+        "icon-size": 16
+    },
+    "custom/math": {
+        "format": "",
+        "on-click": "mathematica",
+        "tooltip": false,
+        "icon-size": 32
+    },
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
+        "format-alt": "{:%Y-%m-%d}",
+        "on-click-right": "gnome-calendar"
+    },
+    "backlight": {
+        "device": "kbd_backlight",
+        "format": "{icon} {percent}% ",
+        "format-icons": ["", "", ""]
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "  {time}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "network": {
+        "format-wifi": " WiFi ({signalStrength}%) ",
+        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-disconnected": "  ⚠",
+        "on-click": " nmtui"
+    },
+    "bluetooth": {
+        "format": "  {icon}",
+        "on-click": "blueman-manager"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": " {volume}% {format_source}",
+        "format-bluetooth-muted": "  0% {format_source}",
+        "format-muted": " 0%",
+        "format-source": "{volume}% ",
+        "format-source-muted": "0%",
+        "format-icons": {
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    }
+}
+
